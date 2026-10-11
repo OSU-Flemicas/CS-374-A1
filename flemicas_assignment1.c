@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-// determine number of spherical segments -- DONE
-// maintain a running total of surface area and volume -> do averages at the end
-// loop the number of segments, requesting from the user a Radius, an ha, and an hb
-// inside each loop validate the responses (DONE), calculate the total surface area and volume, return inputs and results
+// CS 374 Assignment 1
+// Programmer: Cassandra Fleming (flemicas@oregonstate.edu)
+// Description: This assignment uses user input values to calculate the total surface area and volume of a user determined number of spherical segments
+//              After it finishes calculations for individual segments, it will then caclulate the average total surface area and volume
+
 
 int main(void) {
     //declare variables
@@ -82,7 +83,7 @@ int main(void) {
             }
         }
 
-        // do calulations
+        // do calculations
         a = sqrt((R*R)-(ha*ha));
         b = sqrt((R*R)-(hb*hb));
         h = ha - hb;
